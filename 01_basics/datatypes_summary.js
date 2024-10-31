@@ -33,4 +33,27 @@ const myFunction = function(){
     console.log("hello world");
 }
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
+// console.log(myFunction());
+
+
+//-------------------------------------------
+
+//  stackk (primitive) and heap (non-primitive)
+
+let myName = "yasir"
+let anotherName = myName
+anotherName = "ansari yaisr"
+
+// console.log(myName);
+// console.log(anotherName);
+
+let userOne = {
+    name: "yasir",
+    age: 20
+}
+let userTwo = userOne
+userTwo.name = "ansari yasir"
+
+console.log(userOne.name);
+console.log(userTwo.name);
