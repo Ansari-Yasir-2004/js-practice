@@ -12,6 +12,8 @@ let url = "https://yasir.com/yasir%20ansari"
 
 let newString = "console.log(url.replace('%20' , '_'))";
 
-console.log(newString);
+// console.log(newString);
 
 // console.log(newString.includes('yasir-ansari'));
+
+console.log(gameName.split('-'));
