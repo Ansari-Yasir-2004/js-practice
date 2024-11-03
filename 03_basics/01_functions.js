@@ -37,4 +37,28 @@ function userLoggedIn(userName) {
     }
     return `${userName} just logged in`;
 }
-console.log(userLoggedIn("Yasir"))
+// console.log(userLoggedIn("Yasir"))
+
+function calculateCartPrice(...num_1) {
+    return num_1;
+}
+// console.log(calculateCartPrice(100, 200, 300, 1000));
+
+// const user = {
+//     userName: "Yasir",
+//     price: 299,
+// }
+function handleObject(anyObject) {
+    console.log(`Username is ${anyObject.userName} and price is ${anyObject.price}`)
+}
+// handleObject({
+//     userName: "Ansari",
+//     price: 599
+// });
+
+const myNewArray = [100, 200, 300, 400]
+function returnSecondValue(anyArray) {
+    return anyArray[1];
+}
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([100, 200, 300]))
