@@ -2,7 +2,7 @@
 
 ## Project link
 
-[Click Here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
+[Click Here](https://stackblitz.com/edit/dom-project-chaiaurcode-vhuqfz?file=1-colorChanger%2Fchaiaurcode.js)
 
 #  Solution Code
 
