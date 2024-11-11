@@ -48,13 +48,23 @@ form.addEventListener('submit', function (e) {
   const weight = parseInt(document.querySelector('#weight').value);
   const result = document.querySelector('#results');
 
+  function calOfBmi(weight, height) {
+    let bmi = (weight / (height ** 2 / 10000)).toFixed(2);
+    return bmi;
+  }
+
+  const bmi = calOfBmi(weight, height);
+
   if (height == ' ' || height <= 0 || isNaN(height)) {
     result.innerHTML = `Please give a valid height `;
   } else if (weight == ' ' || weight <= 0 || isNaN(weight)) {
     result.innerHTML = `Please give a valid weight `;
-  } else {
-    const bmi = (weight / (height ** 2 / 10000)).toFixed(2);
-    result.innerHTML = `<span>${bmi}</span`;
+  } else if (bmi < 18.6) {
+    result.innerHTML = `<span>${bmi}</span><br><p>You are under weight</p>`;
+  } else if (bmi > 18.6 && bmi < 24.9) {
+    result.innerHTML = `<span>${bmi}</span><br><p>Your weight is normal</p>`;
+  } else if (bmi > 24.9) {
+    result.innerHTML = `<span>${bmi}</span><br><p>You are over weight</p>`;
   }
 });
 
